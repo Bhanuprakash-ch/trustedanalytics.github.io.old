@@ -1,17 +1,58 @@
 /*----extra resetting-----*/
 h1, h2, h3, p, ul {
-    font-weight: normal;
     list-style: none;
     background-color: transparent;
-    font-style: normal;
 }
 /*----theme----------------*/
-h1, h2, h3, p, a {
-    font-family:"Lucida Grande", "Seoge UI", "Arial", sans-serif;
+h1 {
+    font-family:”Intel Clear, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 32px;
+    padding-top: 24px;
+    padding-bottom: 5px;
+    margin: 6px 24px;
+    padding-left: 320px
+}
+p {
+    font-family:"Intel Clear", "Seoge UI", "Arial", sans-serif;
+    color: #9dd7f3;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
+    margin: 6px 24px;
+}
+i {
+    font-family:"Intel Clear", "Seoge UI", "Arial", sans-serif;
+    color: #a0cd47;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 6px 24px;
+}
+h2 {
+    font-family:"Intel Clear", "Seoge UI", "Arial", sans-serif;
+    color: #003C71;
+    text-align: left;
+    font-weight: 200;
+    margin: 6px 12px;
+    font-size: 24px;
+}
+
+h3 {
+    font-family:"Intel Clear", "Seoge UI", "Arial", sans-serif;
+    color: #0071C5;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    margin: 10px 10px;
+}
+a {
+    font-family:"Intel Clear", "Seoge UI", "Arial", sans-serif;
     color: #ffffff;
 }
 body {
-    background-color: #eeeeee;
+    background-color: #ffffff;
 }
 /*----styles---*/
 img {
@@ -20,11 +61,19 @@ img {
     height: 100px;
 }
 body > section > header {
-    background-image: url("background.jpg");
+    background-image: url("banner_01.jpg");
+    background-position: left;
+    vertical-align: top;
+    text-align: left;
+    min-height: 300px;
+    padding-left: 0px;
+}
+body > section > developers {
+    background-image: url("background2.jpg");
     background-position: center;
     vertical-align: top;
     text-align: center;
-    min-height: 300px;
+    min-height: 320px;
     padding-left: 0px;
 }
 hr {
@@ -46,59 +95,29 @@ div > hr {
     background-image:      -o-linear-gradient(left, rgba(85, 102, 136, 1.0), rgba(85, 102, 136, 0.3), rgba(85, 102, 136, 0.1));
     margin: 25px;
 }
-h1 {
-    font-size: 36px;
-    padding-top: 24px;
-}
+
 header > p {
-    max-width: 900px;
-    line-height: 28px;
-    margin: 48px;
-    color: #ffffff;
-    margin: auto;
-}
-p {
-    font-size: 20px;
-    line-height: 24px;
-    margin: 6px 24px;
-    color: #ffffff;
-}
-h2 {
-    text-align: left;
-    margin: 6px 12px;
-    font-size: 24px;
-    color: #ffffff;
-}
-h2 > a:link {
-    text-decoration: none;
-    font-size: 30px;
-    color: #445577;
-}
-/* visited link */
-h2 > a:visited {
-    color: #445577;
-}
-/* mouse over link */
-h2 > a:hover {
-    color: #ffffff;
-}
-/* selected link */
-h2 > a:active {
-    color: #ffffff;
+    max-width: 800px;
+    /* margin: 48px; */
+    padding-left: 320px
+    /* margin: auto; */
 }
 
-h3 {
-    font-size: 20px;
-    text-align: left;
-    margin: 10px 10px;
-    color: #0ab060;
+header > i {
+    max-width: 800px;
+    /* margin: 48px; */
+    padding-left: 320px
+    /* margin: auto; */
 }
+
 ul {
     display: inline-block;
-    background-color: #263a80;
+    /*
+    background-color: #ebf5fe;
     border: 2px solid #aaaaaa;
     box-shadow: 3px 3px 6px #444444;
-    border-radius: 5px;
+    */
+    /* border-radius: 5px; */
     margin: .5%;
     width:23%;
 }
@@ -108,64 +127,63 @@ li {
     text-align: left;
     margin: 2px 15px;
     list-style-type: none;
-    color: #a8c9e0;
+    color: #ccd0d4;
 }
 a:link {
     font-size: 18px;
     text-decoration: none;
-    color: #a8c9e0;
+    color: #4d4d4d;
 }
 /* visited link */
  a:visited {
-    color: #a8c9e0;
+    color: #4d4d4d;
 }
 /* mouse over link */
  a:hover {
-    font-weight: bold;
-    color: #d0d0f0;
+    /* font-weight: bold; */
+    color: #000000;
 }
 /* selected link */
  a:active {
-    color: #d0d0f0;
+    color: #4d4d4d;
 }
 #projects {
     margin: 0 3%;
-    margin-top: -100px;
+    margin-top: -50px;
+    margin-bottom: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
-    background: linear-gradient(to bottom right, #3b3b3b, #a3a3a3);
+    background: #f3f3ee;
     vertical-align: top;
     border-radius: 1px;
-    border: 2px solid #aaaaaa;
+    border: 1px solid #aaaaaa;
 }
-#projects > li > a:link {
-    margin-left: 12px;
-    color: #263a80;
+
+#projects > p {
+    font-family:"Intel Clear", "Seoge UI", "Arial", sans-serif;
+    color: #9dd7f3;
     font-size: 20px;
+    font-weight: 100;
     line-height: 24px;
+    margin: 6px 24px;
 }
-/* visited link */
-#projects > li> a:visited {
-    color: #263a80;
-}
-/* mouse over link */
-#projects > li> a:hover {
-    font-weight: bold;
-    color: #ff0000;
-}
-/* selected link */
-#projects > li > a:active {
-    color: #ff0000;
-}
+
 .footer {
-    background-color: #556688;
+    background-color: #f3f3ee;
     padding-bottom: 10px;
     padding-top: 10px;
+    padding-left: 60px;
     margin-top: 10px;
 }
-.footer > li {
+.footer > p {
+    color: #666666;
+    font-size: 14px;
     text-align: center;
 }
+.footer > li > a {
+    color: #4d4d4d;
+}
+
 .left {
     float:left;
     width: 250px;
@@ -177,6 +195,8 @@ a:link {
 body > div:nth-child(4) > li > a:link {
     font-size: 12px;
 }
+
+
 /*-------smaller screen------*/
  @media(max-width: 1270px) {
     ul {
