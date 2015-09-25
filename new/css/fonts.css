@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'IntelClear';
+    src: url('../fonts/IntelClear_WLat_Rg.eot');
+    src: url('../fonts/IntelClear_WLat_Rg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IntelClear_WLat_Rg.woff') format('woff'),
+         url('../fonts/IntelClear_WLat_Rg.ttf')  format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'IntelClear';
+    src: url('../fonts/IntelClear_WLat_Lt.eot');
+    src: url('../fonts/IntelClear_WLat_Lt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IntelClear_WLat_Lt.woff') format('woff'),
+         url('../fonts/IntelClear_WLat_Lt.ttf')  format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'IntelClear';
+    src: url('../fonts/IntelClear_WLat_Bd.eot');
+    src: url('../fonts/IntelClear_WLat_Bd.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IntelClear_WLat_Bd.woff') format('woff'),
+         url('../fonts/IntelClear_WLat_Bd.ttf')  format('truetype');
+    font-weight: bold;
+}

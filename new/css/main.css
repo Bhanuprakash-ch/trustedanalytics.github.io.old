@@ -1,0 +1,223 @@
+body {
+    font-family: "IntelClear";
+}
+
+a,
+a:hover,
+a:active,
+a:focus,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+/**********************************************/
+/******************* CAROUSEL *****************/
+/**********************************************/
+
+.carousel {
+    background-color: #404040;
+}
+
+.carousel .item {
+    background-position: center center;
+    text-transform: uppercase;
+    color: #ffffff;
+    height: 600px;
+    line-height: 600px;
+    text-align: center;
+}
+
+.carousel .item.slide-open-source {
+    background-image: url("../img/slide1.jpg");
+}
+
+.carousel .item.slide-strata {
+    background-image: url("../img/slide2.jpg");
+}
+
+.carousel .item.slide-data-science {
+    background-image: url("../img/slide3.jpg");
+}
+
+.carousel .item > div {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: normal;
+}
+
+.carousel .item .title-small {
+    font-weight: bold;
+    font-size: 29px;
+}
+
+.carousel .item .title {
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: bold;
+}
+
+.carousel .item .subtitle {
+    font-size: 28px;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.carousel .item a {
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    padding: 10px 80px;
+    margin-top: 30px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.carousel .item a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/**********************************************/
+/********************** MAIN ******************/
+/**********************************************/
+
+header {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 40px 50px;
+    color: #ffffff;
+}
+
+header > nav {
+    float: right;
+    margin-top: -13px;
+}
+
+header > nav > a {
+    text-transform: uppercase;
+    font-size: 16px;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+header > nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    color: #ffffff;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    height: 50px;
+}
+
+.logo > img {
+    height: 100%;
+}
+
+footer {
+    padding: 20px 0;
+    color: #636363;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/**********************************************/
+/******************** SECTIONS ****************/
+/**********************************************/
+
+.section {
+    padding: 50px 0 70px;
+    text-align: center;
+}
+
+.section h2 {
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+.section h1 {
+    margin: 30px 0 40px;
+    font-size: 56px;
+    font-weight: lighter;
+}
+
+.section h4 {
+    font-size: 34px;
+    margin-top: 30px;
+    font-weight: lighter;
+}
+
+.section h5 {
+    margin: -10px 0 0;
+    font-size: 44px;
+    font-weight: lighter;
+}
+
+.section p {
+    font-size: 16px;
+}
+
+#solution > img {
+    margin-top: 60px;
+}
+
+#overview {
+    background-color: #C2DBEF;
+}
+
+#solution {
+    background-color: #E2F0FB;
+}
+
+#who, footer {
+    background-color: #F8F8F8;
+}
+
+#overview, #solution {
+    color: #354B59;
+}
+
+.container {
+    width: 800px;
+}
+
+#who .col {
+    color: #4E4E4E;
+    margin-top: 20px;
+}
+
+.section .col > .title {
+    font-size: 22px;
+    margin: 10px 0 5px;
+    font-weight: lighter;
+}
+
+.section .col ul {
+    list-style: none;
+    padding: 0;
+}
+
+#who .col a:hover {
+    color: #000000;
+}
+
+#who .col > .icon {
+    height: 70px;
+    line-height: 70px;
+}
+
+#who .col > .icon > img {
+    vertical-align: middle;
+}
+
+#resources .container {
+    margin-top: 50px;
+}
+
