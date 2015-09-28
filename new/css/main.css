@@ -74,6 +74,24 @@ a:visited {
     text-transform: none;
 }
 
+@media(max-width: 600px) {
+    .carousel .item .title {
+        font-size: 44px;
+    }
+
+    .carousel .item .subtitle {
+        font-size: 22px;
+    }
+
+    .carousel .item .subtitle.long {
+        font-size: 18px;
+    }
+
+    .carousel .item .title-small {
+        font-size: 24px;
+    }
+}
+
 .carousel .item a {
     font-size: 24px;
     font-weight: bold;
@@ -102,8 +120,19 @@ header {
 }
 
 header > nav {
-    float: right;
     margin-top: -13px;
+    margin-left: 100px;
+    text-align: right;
+}
+
+@media(max-width: 600px) {
+    header {
+        padding: 20px 20px 0;
+    }
+
+    header > nav {
+        display: none;
+    }
 }
 
 header > nav > a {
