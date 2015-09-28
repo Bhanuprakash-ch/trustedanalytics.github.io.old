@@ -5,82 +5,195 @@
     <meta charset="UTF-8">
     <title>Trusted Analytics Projects codenamed Discovery Peak</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=no">
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="main.css" />
+
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    <script src="js/main.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <section>
-        <!— <img src="logo_white.png" />
-        <header>
-            <br />
-	    <h1>The Open Source Center for trusted analytics platform projects</h1>
-	    <i>Codenamed “Discovery Peak”</i>
-	    <br />
-            <br />
-            <p>The following projects and related documentation support a Platform-as-a-Service cloud stack for data scientists and application developers to build & operate domain-specific applications driven by data analysis at scale.</p>
-        </header>
-    </section>
+    <header>
+        <a class="logo" href="https://github.com/trustedanalytics/platform-wiki/wiki"><img src="img/tap.png" /></a>
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#solution">Solution</a>
+            <a href="#who">Who are you?</a>
+            <a href="#resources">Resources</a>
+        </nav>
+    </header>
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
 
-    <div id="projects">
-	<h2>Tools & Utilities Projects</h2>
-        <p>
-            <a href="https://github.com/trustedanalytics/atk">ATK (Analytics Toolkit)</a>, <a href="https://github.com/trustedanalytics/console">console</a>, <a href="https://github.com/trustedanalytics/hadoop-admin-tools">hadoop-admin-tools</a>, <a href="https://github.com/trustedanalytics/hadoop-utils">hadoop-utils</a>, <a href="https://github.com/trustedanalytics/hadoop-spring-utils">hadoop-spring-utils</a>, <a href="https://github.com/trustedanalytics/downloader">downloader</a>, <a href="https://github.com/trustedanalytics/docker-services-boshworkspace">docker-services-boshworkspace</a>, <a href="https://github.com/trustedanalytics/data-catalog">data-catalog</a>, <a href="https://github.com/trustedanalytics/gateway">gateway, <a href="https://github.com/trustedanalytics/data-acquisition">data-acquisition</a>, <a href="https://github.com/trustedanalytics/app-launching-service-broker">app-launching-service-broker</a>, <a href="https://github.com/trustedanalytics/platform-ansible">platform-ansible</a>, <a href="https://github.com/trustedanalytics">more…</a>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active slide-open-source">
+                <div>
+                    <div class="title">We are in open source</div>
+                    <div class="subtitle">Possumus cooperantur</div>
+                    <a href="https://github.com/trustedanalytics/platform-wiki/wiki">learn more</a>
+                </div>
+            </div>
+            <div class="item slide-strata">
+                <div>
+                    <div class="title">Meet us<br />@&nbsp;Strata&#8203;+&#8203;Hadoop in NYC</div>
+                    <div class="subtitle">SEP 29–OCT 1, 2015</div>
+                    <a href="http://strataconf.com/big-data-conference-ny-2015">learn more</a>
+                </div>
+            </div>
+            <div class="item slide-data-science">
+                <div>
+                    <div class="title-small">We are</div>
+                    <div class="title">data science &amp; ML platform</div>
+                    <div class="subtitle long">If a tree falls in a random forest and<br />if no #datascientist is around to visualize it,<br />does it count as #analytics?</div>
+                    <a href="https://github.com/trustedanalytics/atk/wiki">learn more</a>
+                </div>
+            </div>
+        </div>
 
-        </p>
-	<hr>
-	<h2>Service & Other Projects</h2>
-        <p>
-            <a href="https://github.com/trustedanalytics/hdfs-broker">hdfs-broker</a>, <a href="https://github.com/trustedanalytics/hbase-broker">hbase-broker</a>, <a href="https://github.com/trustedanalytics/yarn-broker">yarn-broker</a>, 
-<a href="https://github.com/trustedanalytics/router-metrics-provider">router-metrics-provider</a>, <a href="https://github.com/trustedanalytics/platform-context">platform-context</a>, <a href="https://github.com/trustedanalytics/metrics-provider">metrics-provider</a>, <a href="https://github.com/trustedanalytics/dataset-publisher">dataset-publisher</a>, <a href="https://github.com/trustedanalytics/resource-server-template">resource-server-template</a>, <a href="https://github.com/trustedanalytics/file-server">file-server</a>, <a href="https://github.com/trustedanalytics/latest-events-service">latest-events-service</a>, <a href="https://github.com/trustedanalytics/broker-store">broker-store</a>, <a href="https://github.com/trustedanalytics/user-management">user-management</a>, <a href="https://github.com/trustedanalytics/cf-client">cf-client</a>, <a href="https://github.com/trustedanalytics/spring-project-template">spring-project-template</a>, <a href="https://github.com/trustedanalytics/project-template">project-template</a>, <a href="https://github.com/trustedanalytics/trustedanalytics-cloud-parent">trustedanalytics-cloud-parent</a>, <a href="https://github.com/trustedanalytics/app-launcher-helper">app-launcher-helper</a>, <a href="https://github.com/trustedanalytics/uaa">uaa</a>, <a href="https://github.com/trustedanalytics">more…</a>
-        </p>
-	<hr>
-	<h2>Demo & Sample Projects</h2>
-        <p>
-            <a href="https://github.com/trustedanalytics/space-shuttle-demo">space-shuttle-demo</a>, <a href="https://github.com/trustedanalytics/mqtt-demo">mqtt-demo</a>, <a href="https://github.com/trustedanalytics/dataset-reader-sample">dataset-reader-sample</a>, <a href="https://github.com/trustedanalytics/ingestion-ws-kafka-hdfs">ingestion-ws-kafka-hdfs</a>
-        </p>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
-    <div class="footer">
-        <ul>
-            <h3>For Operators</h3>
-            <div class="right">
-                <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Overview">Overview & Key Features</a></li>
-                <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Getting%20Started%20Guide#installation-and-administration">Installation & Administration</a></li>
-		<li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Platform%20Deployment%20Procedure%20in%20AWS">Deployment Procedure for AWS</a></li>
-            </div>
-        </ul>
-        <ul>
-            <h3>For App Developers</h3>
-            <div class="right">
-                <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Getting%20Started%20Guide#app-deployment-and-configuration">App deployment & Configuration</a></li>
-                <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Application-Platform">Application Platform</a></li>
-                <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Development-guidelines">Development Guidelines</a></li>
-            </div>
-        </ul>
-        <ul>
-            <h3>For Data Scientists</h3>
-            <div class="right">
-                <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/ATK-Overview">ATK Overview</a></li>
-                <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Data-Acquisition">Data Acquisition</a></li>
-                <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Getting%20Started%20Guide#working-with-data-in-tap">Getting Started with your Data</a></li>
-            </div>
-        </ul>
-        <ul>
-            <h3>General</h3>
-            <div class="left">
-                <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki">Project Wikis</a></li>
-                <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/FAQs#open-source-faqs">Open Source FAQs</a></li>
-            </div>
-            <div class="right">
 
-            </div>
-        </ul>
-	<br />
-	<br />
-        <p><center>View all code and documentation here: <a href="https://github.com/trustedanalytics/">https://github.com/trustedanalytics/</a>
-	    and see Trusted Analytics Project JIRA site: <a href="https://trustedanalytics.atlassian.net/">https://trustedanalytics.atlassian.net/</a><center></p>
+    <div class="section" id="overview">
+        <div class="container">
+            <h2>Overview</h2>
+            <h1>Trusted Analytics Platform</h1>
+            <h2>Problem</h2>
+            <img src="img/data-science.png" />
+        </div>
     </div>
+
+    <div class="section" id="solution">
+        <div class="container">
+            <h2>Solution</h2>
+            <h4>What is it?</h4>
+            <p>A Platform-as-a-Service Cloud stack for data scientists and application developers to build &amp; operate<br /> domain specific applications driven by data analysis at scale.</p>
+            <h4>Why should anyone care?</h4>
+            <p>TAP makes vertical applications easier to develop, with more control at lower cost.<br />Extensible platform to collect, store and analyze massive amounts of data on a private or public cloud deployments.
+            </p>
+            <img src="img/architecture.png" />
+        </div>
+    </div>
+
+    <div class="section" id="who">
+        <h2>Who are you?</h2>
+        <h5>Pick the role you play</h5>
+        <div class="container">
+
+            <div class="col col-sm-4">
+                <div class="icon">
+                    <img src="img/operator-icon.png" />
+                </div>
+                <div class="title">Operator</div>
+                <ul>
+                    <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Overview">Overview &amp; Key Features</a></li>
+                    <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Getting%20Started%20Guide#installation-and-administration">Installation &amp; Administration</a></li>
+                    <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Platform%20Deployment%20Procedure%20in%20AWS">Deployment Procedure for AWS</a></li>
+                </ul>
+            </div>
+            <div class="col col-sm-4">
+                <div class="icon">
+                    <img src="img/app-developer-icon.png" />
+                </div>
+                <div class="title">App Developer</div>
+                <ul>
+                    <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Getting%20Started%20Guide#app-deployment-and-configuration">App deployment &amp; Configuration</a></li>
+                    <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Application-Platform">Application Platform</a></li>
+                    <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Development-guidelines">Development Guidelines</a></li>
+                </ul>
+            </div>
+            <div class="col col-sm-4">
+                <div class="icon">
+                    <img src="img/data-scientist-icon.png" />
+                </div>
+                <div class="title">Data Scientist</div>
+                <ul>
+                    <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/ATK-Overview">ATK Overview</a></li>
+                    <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Data-Acquisition">Data Acquisition</a></li>
+                    <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/Getting%20Started%20Guide#working-with-data-in-tap">Getting Started with your Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="resources">
+        <h2>resources</h2>
+        <h5>Get what you want</h5>
+        <div class="container">
+            <div class="col col-md-3 col-sm-6">
+                <div class="title">Useful links</div>
+                <ul>
+                    <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki">Wiki</a></li>
+                    <li><a href="https://trustedanalytics.atlassian.net/">Jira</a></li>
+                    <li><a href="https://github.com/trustedanalytics/platform-wiki/wiki/FAQs#open-source-faqs">Open Source FAQs</a></li>
+                </ul>
+            </div>
+            <div class="col col-md-3 col-sm-6">
+                <div class="title">Demo &amp; Sample Projects</div>
+                <ul>
+                    <li><a href="https://github.com/trustedanalytics/space-shuttle-demo">space-shuttle-demo</a></li>
+                    <li><a href="https://github.com/trustedanalytics/mqtt-demo">mqtt-demo</a></li>
+                    <li><a href="https://github.com/trustedanalytics/dataset-reader-sample">dataset-reader-sample</a></li>
+                    <li><a href="https://github.com/trustedanalytics/ingestion-ws-kafka-hdfs">ingestion-ws-kafka-hdfs</a></li>
+                    <li><a href="https://github.com/trustedanalytics/resource-server-template">resource-server-template</a></li>
+                    <li><a href="https://github.com/trustedanalytics/spring-project-template">spring-project-template</a></li>
+                </ul>
+            </div>
+            <div class="col col-md-3 col-sm-6">
+                <div class="title">Tools &amp; Utilities Projects</div>
+                 <ul>
+                    <li><a href="https://github.com/trustedanalytics/atk">ATK (Analytics Toolkit)</a></li>
+                    <li><a href="https://github.com/trustedanalytics/console">console</a></li>
+                    <li><a href="https://github.com/trustedanalytics/hadoop-admin-tools">hadoop-admin-tools</a></li>
+                    <li><a href="https://github.com/trustedanalytics/hadoop-utils">hadoop-utils</a></li>
+                    <li><a href="https://github.com/trustedanalytics/hadoop-spring-utils">hadoop-spring-utils</a></li>
+                    <li><a href="https://github.com/trustedanalytics/gateway">gateway</a></li>
+                    <li><a href="https://github.com/trustedanalytics/platform-ansible">platform-ansible</a></li>
+                     <li><a href="https://github.com/trustedanalytics/cf-client">cf-client</a></li>
+                    <li><a href="https://github.com/trustedanalytics">more…</a></li>
+                </ul>
+            </div>
+            <div class="col col-md-3 col-sm-6">
+                <div class="title">Services &amp; Other Projects</div>
+                <ul>
+                    <li><a href="https://github.com/trustedanalytics/router-metrics-provider">router-metrics-provider</a></li>
+                    <li><a href="https://github.com/trustedanalytics/metrics-provider">metrics-provider</a></li>
+                    <li><a href="https://github.com/trustedanalytics/latest-events-service">latest-events-service</a></li>
+                    <li><a href="https://github.com/trustedanalytics/user-management">user-management</a></li>
+
+                    <li><a href="https://github.com/trustedanalytics/app-launcher-helper">app-launcher-helper</a></li>
+                    <li><a href="https://github.com/trustedanalytics/data-catalog">data-catalog</a></li>
+                    <li><a href="https://github.com/trustedanalytics/downloader">downloader</a></li>
+                    <li><a href="https://github.com/trustedanalytics/trustedanalytics">more…</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>Trusted Analytics 2015</footer>
 
 </body>
 
