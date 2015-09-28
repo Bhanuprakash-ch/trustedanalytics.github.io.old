@@ -28,6 +28,12 @@ a:visited {
     text-align: center;
 }
 
+@media (min-width: 1981px) {
+    .carousel .item {
+        background-size: 100% auto;
+    }
+}
+
 .carousel .item.slide-open-source {
     background-image: url("../img/slide1.jpg");
 }
@@ -58,9 +64,14 @@ a:visited {
 }
 
 .carousel .item .subtitle {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: lighter;
     margin-top: 5px;
+}
+
+.carousel .item .subtitle.long {
+    font-size: 22px;
+    text-transform: none;
 }
 
 .carousel .item a {
@@ -185,7 +196,11 @@ footer {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+}
+
+.container > img {
+    max-width: 100%;
 }
 
 #who .col {
