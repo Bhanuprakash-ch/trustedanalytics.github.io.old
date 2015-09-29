@@ -34,7 +34,7 @@ a:visited {
     }
 }
 
-.carousel .item.slide-open-source {
+.carousel .item.slide-open-forum {
     background-image: url("../img/slide1.jpg");
 }
 
@@ -46,6 +46,9 @@ a:visited {
     background-image: url("../img/slide3.jpg");
 }
 
+.carousel .item.slide-enterprise {
+    background-image: url("../img/slide4.jpg");
+}
 .carousel .item > div {
     vertical-align: middle;
     display: inline-block;
